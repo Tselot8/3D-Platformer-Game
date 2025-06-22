@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000;
+  color: white;
+}
+
+#startScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #1e90ff, #00fa9a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+
+.startContent {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transform: scale(0.95); /* slight downscale */
+}
+
+.startContent h1 {
+  font-size: 1.5em;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 black;
+}
+
+.instructions {
+  margin-top: 20px;
+  font-size: 0.75em;
+  line-height: 1.6em;
+  text-shadow: 1px 1px 0 black;
+}
+
+#ui {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  font-size: 0.8em;
+  text-shadow: 1px 1px 0 black;
+}
+
+#countdown {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: white;
+  z-index: 9;
+  background: linear-gradient(to bottom right, #1e90ff, #00fa9a);
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 0 black;
+}
+#loadingOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px 40px;
+  border-radius: 12px;
+  display: none;
+}
+
+#winScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  display: none;
+  text-shadow: 2px 2px 0 black;
+}
+
+#winScreen button {
+  margin-top: 20px;
+  font-size: 1em;
+  padding: 12px 24px;
+  border: none;
+  background: gold;
+  color: black;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+#winScreen button:hover {
+  background: orange;
+}

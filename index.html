@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JumpWorld</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="startScreen">
+    <div class="startContent">
+      <h1>🎮 Welcome to JumpWorld!</h1>
+      <p>Press <strong>Enter</strong> to Start</p>
+      <p class="instructions">
+        Press <strong>Space</strong> to Jump<br />
+        Press <strong>D / →</strong> to Move Right<br />
+        Press <strong>A / ←</strong> to Move Left
+      </p>
+    </div>
+  </div>
+
+  <!-- Game UI -->
+  <div id="ui">
+    <p>Score: <span id="score">0</span></p>
+    <p>Lives: <span id="lives">3</span></p>
+  </div>
+
+  <div id="loadingOverlay">Loading Level 2...</div>
+  <!-- Game Canvas -->
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Win/Lose Screen -->
+  <div id="winScreen">
+    <div id="winMessage">🎉 You Win! 🎉</div>
+    <button id="playAgainBtn">Play Again</button>
+  </div>
+
+  <!-- Script -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
